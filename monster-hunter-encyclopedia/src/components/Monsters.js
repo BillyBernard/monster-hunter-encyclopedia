@@ -12,8 +12,21 @@ function Monsters() {
     }).catch(err => console.log(err))
   }, [])
 
+    const filteredMonsters = monsters.filter(
+        monster => monster.name
+    );
+
     return (
         <>
+        <div className='monster-container'>
+            <div className='monster'>
+            </div>
+            {filteredMonsters.map(monsters => {
+                return (
+                    <h1>{monsters.name}</h1>
+                )
+            })}
+        </div>
         </>
     )
 }
