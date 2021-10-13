@@ -23,7 +23,14 @@ function Monsters() {
             </div>
             {filteredMonsters.map(monsters => {
                 return (
-                    <h1>{monsters.name}</h1>
+                    <div key={monsters.id}>
+                    <h1>Name: {monsters.name}</h1>
+                        <div>
+                            <h3>Type and Species: {monsters.type}, {monsters.species}</h3>
+                            <p>Description: {monsters.description}</p>
+                        </div>
+                    </div>
+                
                 )
             })}
         </div>

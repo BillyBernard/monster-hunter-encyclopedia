@@ -11,10 +11,11 @@ function App() {
     <>
     <Router>
       <Navbar />
-      <Monsters />
       <Switch>
         <Route exact path='/' />
-        <Route path='/Monsters' />
+        <Route path='/Monsters'>
+          <Monsters />
+        </Route>
       </Switch>
     </Router>
     </>
