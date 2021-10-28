@@ -9,8 +9,26 @@ function Navbar() {
                 <Link to='/' >
                     Home
                 </Link>
+                <Link to='/Armor'>
+                    Armor
+                </Link>
+                <Link to='/Decorations'>
+                    Decorations
+                </Link>
+                <Link to='/Items'>
+                    Items
+                </Link>
+                <Link to='/Locations'>
+                    Locations
+                </Link>
                 <Link to='/Monsters' >
                     Monsters
+                </Link>
+                <Link to='/Weapons'>
+                    Weapons
+                </Link>
+                <Link to='/HunterToDo'>
+                    My Hunter List
                 </Link>
             </div>
         </nav>
